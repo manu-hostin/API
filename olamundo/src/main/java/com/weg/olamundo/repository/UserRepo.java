@@ -2,6 +2,7 @@ package com.weg.olamundo.repository;
 
 import com.weg.olamundo.Conexao.Conexao;
 import com.weg.olamundo.model.Usuario;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class UserRepo {
 
     public List<Usuario> listarUser () throws SQLException {
