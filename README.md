@@ -38,10 +38,10 @@ Requisições GET não utilizam body.
 
 ## 📌 Observações
 
-Projeto sem JPA
+- Projeto sem JPA
 
-Uso de PreparedStatement
+- Uso de PreparedStatement
 
-AUTO_INCREMENT não reutiliza IDs
+- AUTO_INCREMENT não reutiliza IDs
 
-Tabela chamada User (uso de crase no SQL)
+- Tabela chamada User (uso de crase no SQL)
