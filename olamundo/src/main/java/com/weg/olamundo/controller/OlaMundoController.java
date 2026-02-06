@@ -3,9 +3,7 @@ package com.weg.olamundo.controller;
 import com.weg.olamundo.model.Usuario;
 import com.weg.olamundo.repository.UserRepo;
 import com.weg.olamundo.service.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -32,5 +30,9 @@ public class OlaMundoController {
             e.printStackTrace();
         }
         return lista;
+    }
+    @PostMapping("/cadastro")
+    public Usuario postUser (@RequestBody Usuario user) throws SQLException {
+        return usuarioService.salvarUser(user);
     }
 }

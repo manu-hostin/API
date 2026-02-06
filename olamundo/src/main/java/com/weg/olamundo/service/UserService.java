@@ -19,4 +19,9 @@ public class UserService {
     public List<Usuario> obterUsuarios() throws SQLException {
         return userRepo.listarUser();
     }
+
+    public Usuario salvarUser(Usuario user) throws SQLException {
+        userRepo.salvarUser(user);
+        return user;
+    }
 }

@@ -16,6 +16,9 @@ public class Usuario {
         this.email = email;
     }
 
+    public Usuario() {
+    }
+
     public int getId() {
         return id;
     }

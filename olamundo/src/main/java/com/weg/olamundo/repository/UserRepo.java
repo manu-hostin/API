@@ -35,4 +35,17 @@ public class UserRepo {
         }
         return lista;
     }
+
+    public void salvarUser (Usuario user) throws SQLException {
+        String sql = "INSERT INTO User (nome, email) VALUES (?,?)";
+
+        try (Connection conn = Conexao.conectar();
+             PreparedStatement stmt = conn.prepareStatement(sql)){
+
+            stmt.setString(1, user.getNome());
+            stmt.setString(2, user.getEmail());
+            stmt.executeUpdate();
+
+        }
+    }
 }
