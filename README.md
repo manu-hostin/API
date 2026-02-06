@@ -29,6 +29,7 @@ INSERT INTO `User` (nome, email) VALUES
 ('Ana', 'ana@email.com'),
 ('João', 'joao@email.com'),
 ('Maria', 'maria@email.com');
+````
 
 ## 🧪 Testes
 
